@@ -12,7 +12,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-  <!-- Favicons -->
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+
+
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -70,7 +72,7 @@
     colors="primary:#4030e8,secondary:#16c72e"
     style="width:250px;height:250px">
 </lord-icon></div>
-                    <h4><a href=""  data-langkey="k1" >Lorem Ipsum</a></h4>
+                    <h4><a href=""  data-langkey="k1" ></a></h4>
                     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                   </div>
                 </div>
@@ -113,6 +115,7 @@
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <li><a class="nav-link scrollto"><input id="languageTxt" type="checkbox"  onclick="updateValue(this)"  data-on="Arabic" data-off="English" data-onstyle="success" data-offstyle="danger" checked data-toggle="toggle"></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -126,7 +129,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Better Solutions For Your Business</h1>
+          <h1  data-langkey="k1" ></h1>
           <h2>We are team of talented designers making websites with Bootstrap</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
@@ -870,7 +873,11 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.slim.js"
+  integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
@@ -892,7 +899,12 @@ document.getElementsByTagName("html")[0].setAttribute("lang", "ar");
 //languages.forEach(function(value, index){
 //    languages[index].addEventListener('click', function(){
     //   switchLanguage(availableLanguages(userLang));
-        switchLanguage(availableLanguages("ar"));
+       var localLang = getCookie("language");
+       if (localLang=='' || localLang=='ar')  switchLanguage(availableLanguages("ar"));
+      else {switchLanguage(availableLanguages(localLang));
+//$('#languageTxt').bootstrapToggle('English')
+$('#languageTxt').prop('checked',false)
+      }
 //    });
 //});
 xhttp.onreadystatechange = function(){
@@ -913,5 +925,57 @@ function processLangDocument(){
         if(langDocument[key]) value.innerText = langDocument[key];
     });
 }
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  let user = getCookie("language");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+    user = prompt("Please enter your name:", "");
+    if (user != "" && user != null) {
+      setCookie("language", user, 365);
+    }
+  }
+}
+$(function() {
+   $('#languageTxt').change(function() {
+     console.log( $(this).prop('checked'))
+     var lang ="ar"
+     if($(this).prop('checked')) lang="ar";
+     else  lang="en";
+
+     setCookie("language",lang,365);
+     location.reload();
+   })
+ })
+/*function updateValue(obj){
+var lang ="ar"
+
+  if(document.getElementById('languageTxt').value=='on') lang="en";
+  else  lang="ar";
+  setCookie("language",lang,365);
+  location.reload();
+}*/
 </script>
 </html>

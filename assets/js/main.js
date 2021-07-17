@@ -11,6 +11,7 @@
    * Easy selector helper function
    */
   const select = (el, all = false) => {
+    if(el!=''){
     el = el.trim()
     if (all) {
       return [...document.querySelectorAll(el)]
@@ -18,6 +19,7 @@
       return document.querySelector(el)
     }
   }
+}
 
   /**
    * Easy event listener function
@@ -34,7 +36,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -165,7 +167,7 @@
   }
 
   /**
-   * Initiate  glightbox 
+   * Initiate  glightbox
    */
   const glightbox = GLightbox({
     selector: '.glightbox'
@@ -219,7 +221,7 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
