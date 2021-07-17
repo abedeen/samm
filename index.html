@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+
+  <style>
+  @font-face {
+    font-family: 'Lateef';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(https://fonts.gstatic.com/l/font?kit=hESw6XVnNCxEvkbMow9Xb67-3VEDY0kkYiNvfCWeLAXRLdLPBZvWIGysxcdRt17B4wViu9Bh2N80LAA8WwSFpjWVOEZ-YT1wqpymRA5QPgxVK3pAUKlHglhYhz7F_Ftq4PxtlzOAPSy_VFwuTyVTuM81VubQgv3c5wVaJJa0kDVzqqv5WcxwJ7p4qhmenOFjbLhXTG7YsBYwExmjIlQKpAvHahfabHxbem3vbQb-MfIbDNEXaDk6zvewEYbkykzxPLFs6WbYLqz75pDObDKfQ-rWvK0wT64gnyVDnx5KICXxXzOukW70&skey=c6edfa7a4a5da33&v=v18) format('woff2');
+  }
+  </style>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -1009,6 +1019,7 @@ document.getElementsByTagName("html")[0].setAttribute("lang", "ar");
 //    languages[index].addEventListener('click', function(){
     //   switchLanguage(availableLanguages(userLang));
        var localLang = getCookie("language");
+       addStyle(localLang);
        if (localLang=='' || localLang=='ar')  switchLanguage(availableLanguages("ar"));
       else {switchLanguage(availableLanguages(localLang));
 //$('#languageTxt').bootstrapToggle('English')
@@ -1066,6 +1077,18 @@ function checkCookie() {
       setCookie("language", user, 365);
     }
   }
+}
+function addStyle(lang){
+var en = "body {  font-family: \"Open Sans\", sans-serif;  color: #444444;}  h1, h2, h3, h4, h5, h6 {  font-family: \"Jost\", sans-serif;  }";
+var ar = "body {  font-family: \"Lateef\", Lateef;  color: #444444;}  h1, h2, h3, h4, h5, h6 {  font-family:  Lateef;  }";
+var style = document.createElement('style');
+style.type = 'text/css';
+
+if(lang=='en') style.innerHTML = en;
+else  style.innerHTML = ar;
+
+document.getElementsByTagName('head')[0].appendChild(style);
+
 }
 $(function() {
    $('#languageTxt').change(function() {
