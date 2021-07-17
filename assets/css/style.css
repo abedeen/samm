@@ -138,7 +138,7 @@
 .nav > li.dropdown.open .dropdown-menu {display:table; width: 100%; text-align: center; left:0; right:0; }
 .dropdown-menu>li { display: table-cell; }
 @media (min-width: 991px) {
-.dropdown-menu{
+.dropdown-menu1{
   position: absolute!important;
 left: -48vw!important;
 width: 80vw!important;
