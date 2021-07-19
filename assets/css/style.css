@@ -1,6 +1,4 @@
-.row1{
-  margin-top:200px;
-}
+
 .card-pricint1 {
   position: absolute;
   top: 50%;
@@ -514,7 +512,12 @@ a:hover {
 .pricing {
   background-image: linear-gradient(to right, #2BB673 , #0c1d25);
 }
-
+.vpc-bg{
+  background-image: url(" https://thumbs.gfycat.com/NeedyHollowGrosbeak-max-1mb.gif");
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
 #header .logo {
   font-size: 30px;
   margin: 0;
@@ -897,7 +900,7 @@ a:hover {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 120px 0;
   overflow: hidden;
 }
 
