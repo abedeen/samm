@@ -1,9 +1,9 @@
 import os
 import json
 file=1
-ar={"kk0":'برمجة تطبيقات الاندرويد والايفون'}
-eng={"kk0":'Programming Android and iPhone applications'}
-kcount={'count':1,'file':1}
+ar={"kk0":'برمجة تطبيقات الاندرويد والايفون', "kk2":'الرئيسية', "kk3":'تسجيل الدخول',"kk4":'الاشتراك',"kk5":'تواصل واتس',"kk6":'الاشتراك',"kk7":'استضافة المواقع',"kk8":'استضافة ريسلرات',"kk9":'في بي اس',"kk10":'في بي اس لينكس',"kk11":'في بي اس ويندوز',"kk12":'في بي اس ماتين 2',"kk13":'سيرفرات',"kk14":'نطاقات',"kk15":'خدمات',"kk16":'عن الشركة',"kk17":'اتصل بنا'}
+eng={"kk0":'Programming Android and iPhone applications', "kk2":'main', "kk3":'sign in', "kk4":'subscriptions',"kk5":'contact watsapp',"kk6":'host',"kk7":'web hosting',"kk8": 'hosting reseller',"kk9": 'VPS',"kk10": 'VPS linux',"kk11": 'VPS windows',"kk12": 'VPS matin2',"kk13": 'Servers',"kk14": 'Ranges',"kk15": 'Services',"kk16": 'About Company',"kk17": 'contact'}
+kcount={'count':18,'file':18}
 def getCount():
     s = kcount['count'] +1
     kcount['count']=s
@@ -54,7 +54,7 @@ def generate(txt, navs):
                  str= str+ nav_link.replace('@@@LINK@@@',linkstr).replace("@@@LINK2@@@",nextFile())+"\n"
 
     return str
-main_txt ={'index':"kk0",'0':'kk1','1':'kk2'}
+main_txt ={'index':"kk0",'0':'kk1','1':'kk2','2':'kk3','3':'kk4','4':'kk5','5':'kk6','6':'kk7','7':'kk8','8':'kk9','9':'kk10','10':'kk11','11':'kk12','12':'kk13','13':'kk14','14':'kk15','15':'kk16','16':'kk17'}
 def generate(txt, navs):
     nav_main = "<ul>\n @@@ITEM@@@</ul>"
     #nav_drop = ""<li class=\"dropdown\"><a  class=\"menuAnchor\" href=\"\" ><span   data-langkey=\"hosting\">@@@LINK@@@</span> <i class=\"bi bi-chevron-down\"></i></a>\n@@@SUBLINK@@@\n\t</li>"
@@ -156,3 +156,4 @@ for f in files:
             file1.write(stext)
             file1.close()
 '''
+def
