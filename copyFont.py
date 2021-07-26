@@ -13,7 +13,7 @@ def generateFiles():
         if f.endswith(".html"):
             tfile =os.path.abspath(os.getcwd())+'/'+f;
             txt = readFile(tfile)
-            stext = txt.replace(' h6 {  font-family:  Lateef;',' h6, a {  font-family:  Lateef!important;')
+            stext = txt.replace('https://fonts.gstatic.com/l/font?kit=hESw6XVnNCxEvkbMow9Xb67-3VEDY0kkYiNvfCWeLAXRLdLPBZvWIGysxcdRt17B4wViu9Bh2N80LAA8WwSFpjWVOEZ-YT1wqpymRA5QPgxVK3pAUKlHglhYhz7F_Ftq4PxtlzOAPSy_VFwuTyVTuM81VubQgv3c5wVaJJa0kDVzqqv5WcxwJ7p4qhmenOFjbLhXTG7YsBYwExmjIlQKpAvHahfabHxbem3vbQb-MfIbDNEXaDk6zvewEYbkykzxPLFs6WbYLqz75pDObDKfQ-rWvK0wT64gnyVDnx5KICXxXzOukW70&skey=c6edfa7a4a5da33&v=v18','https://fonts.gstatic.com/l/font?kit=WwkbxPW1E165rajQKDulEIU6cPIWBHYivgBpqLigmdK_tgiHKVombYoHTz_FHzjXJw3D&skey=42031ebbc54bfc32&v=v16')
             print(tfile)
             file1 = open(tfile,"w")
             file1.write(stext)
