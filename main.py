@@ -124,7 +124,7 @@ data ={
 "host":[['web hosting','استضافة المواقع'],['hosting reseller','استضافة ريسلرات']],
 "VPS":[['VPS linux','في بي اس لينكس'],['VPS windows','في بي اس ويندوز'],['VPS matin2','في بي اس ماتين 2']],
 "servers":[['introductory full servers','سيرفرات كاملة تمهيدية'],['economic full servers','سيرفرات كاملة اقتصادية'],['complete servers for enterprises','سيرفرات كاملة للمؤسسات'],['complete professional servers','سيرفرات كاملة للمحترفين'],['gaming servers','سيرفرات للألعاب'],['storage servers','سيرفرات للتخزين']],
-"services":[['web design','تصميم مواقع الانترنت'],['website programming','برمجة مواقع الانترنت'],['smart application programming','برمجة التطبيقات الذكية'],['SSL security certificates','شهادات الأمان SSL'],['wordpress technical support','دعم فني وردبرس']],
+"Services":[['web design','تصميم مواقع الانترنت'],['website programming','برمجة مواقع الانترنت'],['smart application programming','برمجة التطبيقات الذكية'],['SSL security certificates','شهادات الأمان SSL'],['wordpress technical support','دعم فني وردبرس']],
 "about company":[[]],
 "call us":[[]]
 }
