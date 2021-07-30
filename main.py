@@ -156,4 +156,3 @@ for f in files:
             file1.write(stext)
             file1.close()
 '''
-def
