@@ -42,7 +42,11 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link href="assets/vendor/bootstrap/css/main.css"rel="stylesheet">
+  <link href="assets/vendor/select2/select2.min.css"rel="stylesheet">
+  <link href="assets/vendor/datepicker/daterangepicker.css"rel="stylesheet">
+  <link href="assets/vendor/mdi-font/css/material-design-iconic-font.min.css"rel="stylesheet">
+<link href="assets/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet">
   <!-- =======================================================
   * Template Name: Arsha - v4.3.0
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
@@ -62,7 +66,7 @@
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
 
-<nav id="navbar" class="navbar"><ul><li class="dropdown"><a href="#"><span data-langkey="kk2"></span> <i class="bi bi-chevron-down"></i></a><ul><li><a class="nav-link scrollto 2-active@"  href="2.html" data-langkey="kk3"></a></li>
+<nav id="navbar" class="navbar"><ul><li class="dropdown"><a href="#"><span data-langkey="kk2"></span> <i class="bi bi-chevron-down"></i></a><ul><li><a class="nav-link scrollto active"  href="2.html" data-langkey="kk3"></a></li>
 <li><a class="nav-link scrollto 3-active@"  href="3.html" data-langkey="kk4"></a></li>
 <li><a class="nav-link scrollto 4-active@"  href="4.html" data-langkey="kk5"></a></li>
 </ul>
@@ -75,7 +79,7 @@
 </ul>
 </li>	<li><a class="nav-link scrollto 10-active@"  href="10.html" data-langkey="kk13"></a></li>
 <li><a class="nav-link scrollto 11-active@"  href="11.html" data-langkey="kk14"></a></li>
-<li><a class="nav-link scrollto 12-active@"  href="12.html" data-langkey="kk15"></a></li>
+<li><a class="nav-link scrollto 1active"  href="12.html" data-langkey="kk15"></a></li>
 <li><a class="nav-link scrollto 13-active@"  href="13.html" data-langkey="kk16"></a></li>
 <li><a class="nav-link scrollto 14-active@"  href="14.html" data-langkey="kk17"></a></li>
 <li><a class="nav-link scrollto"><input id="languageTxt" type="checkbox"  onclick="updateValue(this)"  data-on="Arabic" data-off="English" data-onstyle="success" data-offstyle="danger" checked data-toggle="toggle"></li></ul></nav>
@@ -85,26 +89,29 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h2 data-langkey="kk0" ></h2>
-          <h5 data-langkey="kk1" ></h5>
-           <h5 data-langkey="kk79"></h5>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+  <body>
+    <section id="hero" class="d-flex align-items-center">
+          <div class="container">
+            <form action="/action_page.php">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+              </div>
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">LogIn</button>
+              <button type="submit" class="btn btn-primary">SignUp</button>
+            </form>
           </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/2.png" class="img-fluid animated" alt="">
-        </div>
-      </div>
-    </div>
-
-  </section><!-- End Hero -->
+    </section>
+  </body><!-- End Hero -->
 
   <main id="main">
     <!-- ======= Frequently Asked Questions Section ======= -->
@@ -113,23 +120,27 @@
 
         <div class="section-title">
           <h2 data-langkey="kk83"></h2>
+
         </div>
+
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-atom icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1" data-langkey="kk84"> <i class="bx bx-atom icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-atom icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1" data-langkey="kk84" ><i class="bx bx-atom icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse " data-bs-parent=".faq-list">
+                <div class="col-md-9 cont">
+                </div>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-expand icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" data-langkey="kk85" class="collapsed"> <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-expand icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" data-langkey="kk85" class="collapsed">Ensuring compatibility with all smart devices and various digital screens via all search engines.? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" data-langkey="kk86" class="collapsed"><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" data-langkey="kk86" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 </div>
             </li>
@@ -268,253 +279,112 @@
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
+
         <div class="section-title">
-          <h2 data-langkey="kk49"></h2>
-          <img src="	https://samm.sa/wp-content/uploads/2021/03/%D9%84%D9%88%D8%BA%D9%88.png" width="300";height="158"></img>
-          <p data-langkey="kk50"></p>
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
-          <div class="col-xl-3 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon">
-                <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
-                <lord-icon
-                  src="https://cdn.lordicon.com/wrprwmwt.json"
-                  trigger="loop"
-                  colors="primary:#1a75bc,secondary:#08a88a"
-                  style="width:145px;height:145px">
-                </lord-icon>
-              </div>
-              <h5 data-langkey="kk13"> </h5>
-              <h4><a href="" data-langkey="kk9"></a></h4>
-              <p data-langkey="kk51"></p>
-            </div>
-            <div class="icon-box">
-              <div class="icon">
-                <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
-                <lord-icon
-                  src="https://cdn.lordicon.com/zpxybbhl.json"
-                  trigger="loop"
-                  colors="primary:#121331,secondary:#08a88a"
-                  style="width:145px;height:145px">
-                </lord-icon>
-              </div>
-              <h5 data-langkey="kk6"> </h5>
-              <h4><a href="" data-langkey="kk8">reseller hosting</a></h4>
-              <p data-langkey="kk52"></p>
-            </div>
-
-            <div class="icon-box">
-              <div class="icon">
-                <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
-                <lord-icon
-                  src="https://cdn.lordicon.com/wcjauznf.json"
-                  trigger="loop"
-                  colors="primary:#1663c7,secondary:#08a88a"
-                  style="width:145px;height:145px">
-                </lord-icon>
-              </div>
-              <h5 data-langkey="kk6"> </h5>
-              <h4><a href="" data-langkey="kk63">cloud hosting</a></h4>
-              <p data-langkey="kk53"></p>
-            </div>
-
-            <div class="icon-box">
-              <div class="icon">
-                <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
-                <lord-icon
-                  src="https://cdn.lordicon.com/rbwzsktr.json"
-                  trigger="loop"
-                  colors="primary:#121331,secondary:#08a88a"
-                  style="width:145px;height:145px">
-                </lord-icon>
-              </div>
-              <h5 data-langkey="kk15"> </h5>
-              <h4><a href="" data-langkey="kk64"></a></h4>
-              <p data-langkey="kk54"></p>
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="col-xl-3 col-md-12 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon">
-                <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
-                <lord-icon
-                  src="https://cdn.lordicon.com/tclnsjgx.json"
-                  trigger="loop"
-                  colors="primary:#121331,secondary:#08a88a"
-                  style="width:145px;height:145px">
-                </lord-icon>
-              </div>
-              <h5 data-langkey="kk14"> </h5>
-              <h4><a href="" data-langkey="kk65" ></a></h4>
-              <p data-langkey="kk55"></p>
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Sed ut perspici</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
             </div>
-
-            <div class="icon-box">
-              <div class="icon"><img src="https://cdn.dribbble.com/users/3191392/screenshots/6780194/dribbble.gif" width="145";height="145" ></img></div>
-              <h5 data-langkey="kk13"> </h5>
-              <h4><a href="" data-langkey="kk66"></a>private servers</h4>
-              <p data-langkey="kk56"></p>
-            </div>
-
-            <div class="icon-box">
-              <div class="icon"><img src="https://cdn.dribbble.com/users/1708950/screenshots/4188877/developer_med.gif" width="145";height="145"></img></div>
-              <h5 data-langkey="kk73"> </h5>
-              <h4><a href="" data-langkey="kk67">application programming</a></h4>
-              <p data-langkey="kk57"></p>
-            </div>
-
-            <div class="icon-box">
-              <div class="icon"><img src="https://i0.wp.com/codemyui.com/wp-content/uploads/2015/05/scroll-icon-animation.gif?fit=880%2C440&ssl=1" width="145";height="145"></img></div>
-              <h5 data-langkey="kk74"> </h5>
-              <h4><a href="" data-langkey="kk68"></a></h4>
-              <p data-langkey="kk58"></p>
-            </div>
-
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-3 col-md-12 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
-            <div class="icon-box">
-              <div class="icon">
-                <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
-                <lord-icon
-                  src="https://cdn.lordicon.com/wxnxiano.json"
-                  trigger="loop"
-                  colors="primary:#121331,secondary:#08a88a"
-                  style="width:145px;height:145px">
-                </lord-icon>
-              </div>
-              <h5 data-langkey="kk75"> </h5>
-              <h4><a href="" data-langkey="kk69"></a></h4>
-              <p data-langkey="kk59"></p>
-            </div>
 
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon">
-                <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
-                <lord-icon
-                  src="https://cdn.lordicon.com/rqqkvjqf.json"
-                  trigger="loop"
-                  colors="primary:#121331,secondary:#08a88a"
-                  style="width:145px;height:145px">
-                </lord-icon>
-              </div>
-              <h5 data-langkey="kk76"> </h5>
-              <h4><a href="" data-langkey="kk70">protection</a></h4>
-              <p data-langkey="kk60"></p>
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
             </div>
+          </div>
 
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
-              <div class="icon">
-                <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
-                <lord-icon
-                  src="https://cdn.lordicon.com/joeivjls.json"
-                  trigger="loop"
-                  colors="primary:#121331,secondary:#08a88a"
-                  style="width:145px;height:145px">
-                </lord-icon>
-              </div>
-              <h5 data-langkey="kk77"> </h5>
-              <h4><a href="" data-langkey="kk71">design</a></h4>
-              <p data-langkey="kk61"></p>
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4><a href="">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
             </div>
+          </div>
 
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon">
-                <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
-                <lord-icon
-                  src="https://cdn.lordicon.com/kkwzhxjj.json"
-                  trigger="loop"
-                  colors="primary:#121331,secondary:#08a88a"
-                  style="width:145px;height:145px">
-                </lord-icon>
-              </div>
-              <h5 data-langkey="kk78"> </h5>
-              <h4><a href="" data-langkey="kk72">web programming</a></h4>
-              <p data-langkey="kk62"></p>
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Sed ut perspici</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4><a href="">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Sed ut perspici</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4><a href="">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
             </div>
           </div>
 
         </div>
       </div>
     </section><!-- End Services Section -->
-    <section id="footer"  >
-      <div class="footer-newsletter">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6">
-              <h2 data-langkey="kk106">GET YOUR DOMAIN NAME</h2>
-              <p data-langkey="kk107">FIND YOUR DOMAIN NAME</p>
-              <form action="" method="post">
-                <input type="email" name="email"><input type="submit" data-langkey="kk82" value="ادخل اسم النطاق">
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row row-cols-1 row-cols-md-6 g-4" class="border-0">
-        <div class="col">
-          <div class="elementor-widget-wrap elementor-element-populated">
-            <div class="elementor-element elementor-element-754ede8 elementor-widget elementor-widget-image" data-id="754ede8" data-widget_type="image.default">
-              <div class="elementor-widget-container">
-                <img src="https://samm.sa/wp-content/uploads/2021/03/dotSTORE.png" width="120px"></img>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="elementor-widget-wrap elementor-element-populated">
-            <div class="elementor-element elementor-element-754ede8 elementor-widget elementor-widget-image" data-id="754ede8" data-widget_type="image.default">
-              <div class="elementor-widget-container">
-                <img src="https://samm.sa/wp-content/uploads/2021/03/5-768x264.png" width="120px"></img>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="elementor-widget-wrap elementor-element-populated">
-            <div class="elementor-element elementor-element-754ede8 elementor-widget elementor-widget-image" data-id="754ede8" data-widget_type="image.default">
-              <div class="elementor-widget-container">
-                <img src="https://samm.sa/wp-content/uploads/2021/03/3-768x264.png" width="120px"></img>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="elementor-widget-wrap elementor-element-populated">
-            <div class="elementor-element elementor-element-754ede8 elementor-widget elementor-widget-image" data-id="754ede8" data-widget_type="image.default">
-              <div class="elementor-widget-container">
-                <img src="https://samm.sa/wp-content/uploads/2021/03/1-768x264.png" width="120px"></img>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="elementor-widget-wrap elementor-element-populated">
-            <div class="elementor-element elementor-element-754ede8 elementor-widget elementor-widget-image" data-id="754ede8" data-widget_type="image.default">
-              <div class="elementor-widget-container">
-                <img src="https://samm.sa/wp-content/uploads/2021/03/2-768x264.png" width="120px"></img>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="elementor-widget-wrap elementor-element-populated">
-            <div class="elementor-element elementor-element-754ede8 elementor-widget elementor-widget-image" data-id="754ede8" data-widget_type="image.default">
-              <div class="elementor-widget-container">
-                <img src="https://samm.sa/wp-content/uploads/2021/03/6-768x264.png" width="120px"></img>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </section
-    </section>
     <!-- ======= Cliens Section ======= -->
     <section id="cliens" class="cliens section-bg">
       <div class="container">
@@ -555,70 +425,36 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2 data-langkey="kk80">About Us</h2>
-          <h5 data-langkey="kk81"></h5>
+          <h2>About Us</h2>
         </div>
-        <div class="row row-cols-1 row-cols-md-6 g-4" class="border-0">
-          <div class="col">
-            <div class="card h-100">
-              <img src="https://i.gifer.com/XthF.gif" width="145px"; height="145px"></img>
-              <div class="card-body">
-                <h5 class="card-title">Technical support tickets</h5>
-                <p class="card-text">966532295510</p>
-              </div>
-            </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            </ul>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <a href="https://imgbb.com/"><img src="https://i.ibb.co/nzg58Cz/skype.gif" alt="skype" width="135px"; height="145px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Skype account</h5>
-                <p class="card-text">id@hotmail.com</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <a href="https://imgbb.com/"><img src="https://i.ibb.co/6HJWr0V/Telegram-1.gif" alt="Telegram-1" width="135px"; height="145px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Connect via Telegram</h5>
-                <p class="card-text">+000522529</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <a href="https://imgbb.com/"><img src="https://i.ibb.co/Z6JPFw5/watsapp.webp" alt="watsapp" width="135px"; height="145px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Contact via WhatsApp</h5>
-                <p class="card-text">+009</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <a href="https://ibb.co/gvywz58"><img src="https://i.ibb.co/yh05WwC/phone.gif" alt="phone" width="135px"; height="145px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Mobile contact</h5>
-                <p class="card-text">+91</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <a href="https://imgbb.com/"><img src="https://i.ibb.co/1RPD7WM/telephone.gif" alt="telephone" width="145px"; height="145px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Telephone contact</h5>
-                <p class="card-text">+91040</p>
-              </div>
-            </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a href="#" class="btn-learn-more">Learn More</a>
           </div>
         </div>
+
       </div>
     </section><!-- End About Us Section -->
 
     <!-- ======= Why Us Section ======= -->
-    <!---section id="why-us" class="why-us section-bg">
+    <section id="why-us" class="why-us section-bg">
       <div class="container-fluid" data-aos="fade-up">
 
         <div class="row">
@@ -670,10 +506,10 @@
         </div>
 
       </div>
-    </section>< End Why Us Section -->
+    </section><!-- End Why Us Section -->
 
     <!-- ======= Skills Section ======= -->
-    <!--section id="skills" class="skills">
+    <section id="skills" class="skills">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -726,7 +562,7 @@
     </section><!-- End Skills Section -->
 
     <!-- ======= Services Section ======= -->
-    <!--section id="services" class="services section-bg">
+    <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -773,7 +609,7 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Cta Section ======= -->
-    <!--section id="cta" class="cta">
+    <section id="cta" class="cta">
       <div class="container" data-aos="zoom-in">
 
         <div class="row">
@@ -790,7 +626,7 @@
     </section><!-- End Cta Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <!--section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -903,7 +739,7 @@
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Team Section ======= -->
-    <!--section id="team" class="team section-bg">
+    <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -987,7 +823,7 @@
     </section><!-- End Team Section -->
 
     <!-- ======= Pricing 1 Section ======= -->
-    <!--section id="pricing"  class="pricing">
+    <section id="pricing"  class="pricing">
   <div class="container"  class="pricing" data-aos="fade-up">
         <div class="section-title">
           <h2 class="text-white">Pricing 1</h2>
@@ -1088,7 +924,7 @@
 </div>
 </section><!-- End Pricing 0 Section -->
     <!-- ======= Pricing 1 Section ======= -->
-    <!--section id="pricing1"  class="pricing">
+    <section id="pricing1"  class="pricing">
   <div class="container"  class="pricing" data-aos="fade-up">
         <div class="section-title">
           <h2 class="text-white">Pricing 2</h2>
@@ -1189,7 +1025,7 @@
   </div>
     </section><!-- End Pricing Section -->
     <!-- ======= Pricing 2 Section ======= -->
-    <!--section id="pricing2"  class="pricing">
+    <section id="pricing2"  class="pricing">
   <div class="container"  class="pricing" data-aos="fade-up">
         <div class="section-title">
           <h2 class="text-white">Pricing 3</h2>
@@ -1290,7 +1126,7 @@
   </div>
 </section><!-- End Pricing 2 Section -->
     <!-- ======= Contact Section ======= -->
-    <!--section id="contact" class="contact">
+    <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -1359,12 +1195,24 @@
       </div>
     </section><!-- End Contact Section -->
 
-  <!--/main><!-- End #main -->
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="footer-top">
       <div class="container">
@@ -1487,6 +1335,11 @@ $('#languageTxt').prop('checked',false)
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/select2/select2.min.js"></script>
+  <script src="assets/vendor/datepicker/moment.min.js"></script>
+  <script src="assets/vendor/datepicker/daterangepicker.js"></script>
+
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script
   src="https://code.jquery.com/jquery-3.6.0.slim.js"
@@ -1495,7 +1348,7 @@ $('#languageTxt').prop('checked',false)
 <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+<script src="assets/vendor/global/global.js"></script>
 </body>
 <script>
 
