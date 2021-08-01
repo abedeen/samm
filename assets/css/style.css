@@ -2158,7 +2158,7 @@ section {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input, .contact .php-email-form textarea,input.login {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -2177,7 +2177,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type="submit"] {
+.contact .php-email-form button[type="submit"], button[type="submit"].login{
   background: #47b2e4;
   border: 0;
   padding: 12px 34px;
