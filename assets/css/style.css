@@ -1005,7 +1005,6 @@ a:hover {
   height: 80vh;
   background: #0c1d25;
 
-
 }
 
 #hero .container {
@@ -1069,7 +1068,100 @@ a:hover {
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+#hero1 {
+  width: 100%;
+  height: 80vh;
+  background: #250c0cad;
 
+}
+#hero2 {
+  width: 100%;
+  height: 80vh;
+  background: #0c232540;
+
+}
+
+#hero3 {
+  width: 100%;
+  height: 80vh;
+  background: #1740cc;
+
+}
+#hero4 {
+  width: 100%;
+  height: 80vh;
+  background: #2bccb3;
+
+}
+#hero5 {
+  width: 100%;
+  height: 80vh;
+  background: #43b574;
+
+}
+
+#hero6 {
+  width: 100%;
+  height: 80vh;
+  background: #a29a65;
+
+}
+#hero7 {
+  width: 100%;
+  height: 80vh;
+  background: #250c0cad;
+
+}
+#hero8 {
+  width: 100%;
+  height: 80vh;
+  background: #0c232540;
+
+}
+
+#hero9 {
+  width: 100%;
+  height: 80vh;
+  background: #1740cc;
+
+}
+#hero10 {
+  width: 100%;
+  height: 80vh;
+  background: #2bccb3;
+
+}
+#hero11 {
+  width: 100%;
+  height: 80vh;
+  background: #c5b2b2;
+
+}
+
+#hero12 {
+  width: 100%;
+  height: 80vh;
+  background: #a29a65;
+
+}
+@media (max-width: 991px) {
+  #hero11 {
+    height: 100vh;
+    text-align: center;
+  }
+  #hero11 .animated {
+    -webkit-animation: none;
+    animation: none;
+    background-size:contain;
+    background-repeat:no-repeat;
+  }
+  #hero11 .hero-img {
+    text-align: center;
+  }
+  #hero11 .hero-img img {
+    width: 50%;
+  }
+}
 @media (max-width: 991px) {
   #hero {
     height: 100vh;
