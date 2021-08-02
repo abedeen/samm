@@ -42,7 +42,11 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link href="assets/vendor/bootstrap/css/main.css"rel="stylesheet">
+  <link href="assets/vendor/select2/select2.min.css"rel="stylesheet">
+  <link href="assets/vendor/datepicker/daterangepicker.css"rel="stylesheet">
+  <link href="assets/vendor/mdi-font/css/material-design-iconic-font.min.css"rel="stylesheet">
+<link href="assets/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet">
   <!-- =======================================================
   * Template Name: Arsha - v4.3.0
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
@@ -62,9 +66,9 @@
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
 
-<nav id="navbar" class="navbar"><ul><li class="dropdown"><a href="#"><span data-langkey="kk2"></span> <i class="bi bi-chevron-down"></i></a><ul><li><a class="nav-link scrollto 2-active@"  href="2.html" data-langkey="kk3"></a></li>
+<nav id="navbar" class="navbar"><ul><li class="dropdown"><a href="#"><span data-langkey="kk2"></span> <i class="bi bi-chevron-down"></i></a><ul><li><a class="nav-link scrollto active"  href="2.html" data-langkey="kk3"></a></li>
 <li><a class="nav-link scrollto 3-active@"  href="3.html" data-langkey="kk4"></a></li>
-<li><a class="nav-link scrollto active"  href="4.html" data-langkey="kk5"></a></li>
+<li><a class="nav-link scrollto 4-active@"  href="4.html" data-langkey="kk5"></a></li>
 </ul>
 </li>	<li class="dropdown"><a href="#"><span data-langkey="kk6"></span> <i class="bi bi-chevron-down"></i></a><ul><li><a class="nav-link scrollto 5-active@"  href="5.html" data-langkey="kk7"></a></li>
 <li><a class="nav-link scrollto 6-active@"  href="6.html" data-langkey="kk8"></a></li>
@@ -75,9 +79,9 @@
 </ul>
 </li>	<li><a class="nav-link scrollto 10-active@"  href="10.html" data-langkey="kk13"></a></li>
 <li><a class="nav-link scrollto 11-active@"  href="11.html" data-langkey="kk14"></a></li>
-<li><a class="nav-link scrollto 12-active@"  href="12.html" data-langkey="kk15"></a></li>
+<li><a class="nav-link scrollto 1active"  href="12.html" data-langkey="kk15"></a></li>
 <li><a class="nav-link scrollto 13-active@"  href="13.html" data-langkey="kk16"></a></li>
-<li><a class="nav-link scrollto 1active"  href="14.html" data-langkey="kk17"></a></li>
+<li><a class="nav-link scrollto 14-active@"  href="14.html" data-langkey="kk17"></a></li>
 <li><a class="nav-link scrollto"><input id="languageTxt" type="checkbox"  onclick="updateValue(this)"  data-on="Arabic" data-off="English" data-onstyle="success" data-offstyle="danger" checked data-toggle="toggle"></li></ul></nav>
       <!-- .navbar -->
 
@@ -85,26 +89,29 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero3" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1  data-langkey="kk5" ></h1>
-          <h2 data-langkey="@@FILE2@@" ></h2>
-           <h3 data-langkey="@@FILE3@@"></h3>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+  <body>
+    <section id="hero" class="d-flex align-items-center">
+          <div class="container">
+            <form action="/action_page.php">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+              </div>
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">LogIn</button>
+              <button type="submit" class="btn btn-primary">SignUp</button>
+            </form>
           </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="https://d3ui957tjb5bqd.cloudfront.net/uploads/2015/03/patakk-compressor.gif" alt="">
-        </div>
-      </div>
-    </div>
-
-  </section><!-- End Hero -->
+    </section>
+  </body><!-- End Hero -->
 
   <main id="main">
     <!-- ======= Frequently Asked Questions Section ======= -->
@@ -112,163 +119,152 @@
       <div class="container" data-aos="fade-up"  data-aos-mirror="true">
 
         <div class="section-title">
-          <h2 data-langkey="k83"></h2>
+          <h2 data-langkey="kk83"></h2>
 
         </div>
 
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-atom icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1" data-langkey="k84"> <i class="bx bx-atom icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-atom icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1" data-langkey="kk84" ><i class="bx bx-atom icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse " data-bs-parent=".faq-list">
                 <div class="col-md-9 cont">
-  <h2>Computer Science and Engineering (UG) - Vision &amp; Mission</h2>
-    <h4>VISION:</h4>
-    <p>To  create the most conducive environment for quality academic and research  oriented undergraduate and postgraduate&nbsp;&nbsp;  education in computer science and engineering and prepare the students  for a globalised technological society and orient them towards serving the  society.</p>
-    <h4>MISSION</h4>
-    <ul>
-      <li>To  impart high quality professional training at the postgraduate and undergraduate  level with an emphasis on basic principles of computer science and engineering.</li>
-      <li>To  establish nationally and internationally recognized research centres and expose  the students to broad research experience. </li>
-      <li>To  impart moral and ethical values, and interpersonal skills to the students.</li>
-      <li>To  empower the students with the required skills to solve the complex&nbsp;&nbsp; technological problems of modern society and  also provide them with a framework for promoting collaborative and  multidisciplinary activities.</li>
-    </ul>
-
-    </div>
+                </div>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-expand icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" data-langkey="k85" class="collapsed">Ensuring compatibility with all smart devices and various digital screens via all search engines.? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-expand icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" data-langkey="kk85" class="collapsed">Ensuring compatibility with all smart devices and various digital screens via all search engines.? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" data-langkey="k86" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" data-langkey="kk86" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" data-langkey="k87" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" data-langkey="kk87" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
 
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" data-langkey="k88" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" data-langkey="kk88" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
 
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" data-langkey="k89" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" data-langkey="kk89" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" data-langkey="k90" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" data-langkey="kk90" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
 
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" data-langkey="k91" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" data-langkey="kk91" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
 
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1" data-langkey="k92"> <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1" data-langkey="kk92"> <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" data-langkey="k93" class="collapsed">Ensuring compatibility with all smart devices and various digital screens via all search engines.? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" data-langkey="kk93" class="collapsed">Ensuring compatibility with all smart devices and various digital screens via all search engines.? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" data-langkey="k94" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" data-langkey="kk94" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" data-langkey="k95" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" data-langkey="kk95" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
 
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" data-langkey="k96" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" data-langkey="kk96" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
 
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" data-langkey="k97" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" data-langkey="kk97" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" data-langkey="k98" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" data-langkey="kk98" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
 
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" data-langkey="k99" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" data-langkey="kk99" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
 
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" data-langkey="k100" class="collapsed">Ensuring compatibility with all smart devices and various digital screens via all search engines.? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" data-langkey="kk100" class="collapsed">Ensuring compatibility with all smart devices and various digital screens via all search engines.? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" data-langkey="k101" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" data-langkey="kk101" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" data-langkey="k102" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" data-langkey="kk102" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
 
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" data-langkey="k103" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" data-langkey="kk103" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
 
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" data-langkey="k104" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" data-langkey="kk104" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" data-langkey="k105" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" data-langkey="kk105" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
 
               </div>
@@ -1339,6 +1335,11 @@ $('#languageTxt').prop('checked',false)
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/select2/select2.min.js"></script>
+  <script src="assets/vendor/datepicker/moment.min.js"></script>
+  <script src="assets/vendor/datepicker/daterangepicker.js"></script>
+
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script
   src="https://code.jquery.com/jquery-3.6.0.slim.js"
@@ -1347,7 +1348,7 @@ $('#languageTxt').prop('checked',false)
 <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+<script src="assets/vendor/global/global.js"></script>
 </body>
 <script>
 
