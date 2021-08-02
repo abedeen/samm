@@ -1558,13 +1558,14 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-  padding: 50px 50px 50px 50px;
+  padding: 15px 15px 15px 15px;
   transition: all ease-in-out 0.4s;
   background: #fff;
+  margin-bottom: 10px;
 }
 
 .services .icon-box .icon {
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .services .icon-box .icon i {
@@ -1575,7 +1576,7 @@ section {
 
 .services .icon-box h4 {
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 24px;
 }
 
@@ -1586,12 +1587,13 @@ section {
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 10px;
   margin-bottom: 0;
 }
 
 .services .icon-box:hover {
   transform: translateY(-10px);
+  margin-bottom: 15px;
 }
 
 .services .icon-box:hover h4 a {
@@ -2534,4 +2536,8 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+.mb20{
+  margin-bottom: 20px!important
+  text-align: center;
 }
