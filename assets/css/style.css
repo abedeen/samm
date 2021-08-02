@@ -1020,12 +1020,12 @@ a:hover {
 }
 
 #hero h2 {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   margin-bottom: 50px;
   font-size: 24px;
 }
-#hero h5 {
-  color: rgba(255, 255, 255, 0.5);
+.index {
+  color: rgba(255, 255, 255, 1)!important;
   margin-bottom: 50px;
   font-size: 16px;
 }
