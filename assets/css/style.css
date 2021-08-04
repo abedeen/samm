@@ -2354,7 +2354,8 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #37517e;
+  opacity: 1;
+  /*background: #37517e;*/
 }
 
 #footer .footer-newsletter {
@@ -2539,5 +2540,4 @@ section {
 }
 .mb20{
   margin-bottom: 20px!important
-  text-align: center;
 }
