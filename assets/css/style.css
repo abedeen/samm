@@ -2537,6 +2537,9 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+  #footer .img {
+    width: auto;
+  }
 }
 .mb20{
   margin-bottom: 20px!important
