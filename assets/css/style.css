@@ -2535,12 +2535,19 @@ section {
     float: none;
   }
   #footer .credits {
-    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
   }
   #footer .img {
-    width: auto;
+    max-width: 25%;
+    width: 25%;
+    display: auto;
+  }
+  #footer .col{
+    flex:45 45 45%;
   }
 }
+
 .mb20{
   margin-bottom: 20px!important
 }
