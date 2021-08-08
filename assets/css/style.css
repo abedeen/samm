@@ -2544,7 +2544,7 @@ section {
     display: auto;
   }
   #footer .col{
-    flex:45 45 45%;
+    flex:30 30 30%;
   }
 }
 
