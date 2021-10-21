@@ -13,7 +13,7 @@ def generateFiles():
         if f.endswith(".html"):
             tfile =os.path.abspath(os.getcwd())+'/'+f;
             txt = readFile(tfile)
-            stext = txt.replace(' url(/assets/font/Cordoba.ttf)',' url(assets/font/Cordoba.ttf)')
+            stext = txt.replace('https://samm.sa/wp-content/uploads/2021/03/5-768x264.png','assets/img/samm.png')
             print(tfile)
             file1 = open(tfile,"w")
             file1.write(stext)
