@@ -13,7 +13,7 @@ def generateFiles():
         if f.endswith(".html"):
             tfile =os.path.abspath(os.getcwd())+'/'+f;
             txt = readFile(tfile)
-            stext = txt.replace('BoutrosNewsH1 Bold!important;','Cordoba')
+            stext = txt.replace(' url(/assets/font/Cordoba.ttf)',' url(assets/font/Cordoba.ttf)')
             print(tfile)
             file1 = open(tfile,"w")
             file1.write(stext)
